@@ -70,8 +70,7 @@
                 android:id="@+id/age_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" >
-                </Spinner>
+                android:layout_weight="1"></Spinner>
         </LinearLayout>
 
         <TextView
@@ -113,17 +112,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@android:color/white"
+                android:onClick="createClaimSummary"
                 android:text="Apply"
-                android:onClick="createClaimSummary"/>
+                android:textColor="@android:color/white" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@android:color/white"
+                android:onClick="viewClaimSummary"
                 android:text="CANCEL"
-                android:onClick="viewClaimSummary"/>
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
     </LinearLayout>

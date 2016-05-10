@@ -34,8 +34,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     }
 
-    public void navigateToLogin(View view)
-    {
+    public void navigateToLogin(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }

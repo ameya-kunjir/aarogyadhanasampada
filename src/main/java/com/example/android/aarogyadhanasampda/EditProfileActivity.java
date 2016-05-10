@@ -1,7 +1,9 @@
 package com.example.android.aarogyadhanasampda;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -31,5 +33,10 @@ public class EditProfileActivity extends AppCompatActivity {
 
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);
+    }
+
+    public void showDashboard(View view) {
+        Intent intentMain = new Intent(this, DashboardActivity.class);
+        startActivity(intentMain);
     }
 }

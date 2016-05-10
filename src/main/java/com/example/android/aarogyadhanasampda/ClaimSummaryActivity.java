@@ -13,8 +13,7 @@ public class ClaimSummaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_claim_summary);
     }
 
-    public void viewClaimHistory(View view)
-    {
+    public void viewClaimHistory(View view) {
 
         Intent intent = new Intent(this, ClaimHistoryActivity.class);
         startActivity(intent);

@@ -1,96 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.aarogyadhanasampda.ClaimHistoryActivity"
-    android:orientation="vertical"
-    android:layout_margin="8dp">
+    android:layout_height="match_parent">
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="Claims History"
-       android:textSize="24sp"/>
-
-    <TableLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         android:layout_margin="8dp"
-        >
-        <TableRow >
-           <TextView android:text="Claim No."
-               android:textSize="16sp"
-               android:layout_weight="1"/>
-            <TextView android:text="Date of Claim"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="Amount"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="Status"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-        </TableRow>
-        <TableRow>
-            <TextView android:text="1234"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="20/01/16"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="70"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="Settled"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-        </TableRow>
-        <TableRow>
-            <TextView android:text="46745"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="23/03/16"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="100"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="Pending"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-        </TableRow>
-        <TableRow>
-            <TextView android:text="4353"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="20/04/16"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="60"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="Pending"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-        </TableRow>
-        <TableRow>
-            <TextView android:text="4569"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="21/04/16"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="80"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-            <TextView android:text="Pending"
-                android:textSize="16sp"
-                android:layout_weight="1"/>
-        </TableRow>
-    </TableLayout>
-        
+        android:orientation="vertical"
+        tools:context="com.example.android.aarogyadhanasampda.ClaimHistoryActivity">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Claims History"
+            android:textSize="24sp" />
 
-</LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Claim No."
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Date of Claim"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Amount"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="1234"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="20/01/16"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="70"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Settled"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="46745"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="23/03/16"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Pending"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="4353"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="20/04/16"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="60"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Pending"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="4569"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="21/04/16"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="80"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Pending"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

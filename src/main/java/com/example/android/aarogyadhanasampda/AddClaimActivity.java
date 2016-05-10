@@ -43,16 +43,16 @@ public class AddClaimActivity extends AppCompatActivity {
         Spinner spinnerAge = (Spinner) findViewById(R.id.age_spinner);
         List<String> ageGroup = new ArrayList<String>();
 
-        diseases.add("00-09");
-        diseases.add("10-19");
-        diseases.add("20-29");
-        diseases.add("30-39");
-        diseases.add("40-49");
-        diseases.add("50-59");
-        diseases.add("60-69");
-        diseases.add("70-79");
-        diseases.add("80-89");
-        diseases.add("90-99");
+        ageGroup.add("00-09");
+        ageGroup.add("10-19");
+        ageGroup.add("20-29");
+        ageGroup.add("30-39");
+        ageGroup.add("40-49");
+        ageGroup.add("50-59");
+        ageGroup.add("60-69");
+        ageGroup.add("70-79");
+        ageGroup.add("80-89");
+        ageGroup.add("90-99");
 
         // Creating adapter for spinner
         ArrayAdapter<String> ageAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ageGroup);
@@ -64,17 +64,14 @@ public class AddClaimActivity extends AppCompatActivity {
         spinnerAge.setAdapter(ageAdapter);
     }
 
-    public void createClaimSummary(View view)
-    {
-
+    public void createClaimSummary(View view) {
         Intent intent = new Intent(this, ClaimSummaryActivity.class);
         startActivity(intent);
     }
 
-    public void viewClaimSummary(View view)
-    {
+    public void viewClaimSummary(View view) {
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, DashboardActivity.class);
         startActivity(intent);
     }
 }

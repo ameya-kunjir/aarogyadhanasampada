@@ -84,29 +84,29 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             Intent intentMain = new Intent(this, MainActivity.class);
             startActivity(intentMain);
-        } else if (id == R.id.nav_add_claim) {
+        } /*else if (id == R.id.nav_gallery) {
             Intent intentAddClaim = new Intent(this, AuthenticateActivity.class);
             intentAddClaim.putExtra("caller","addclaim");
             startActivity(intentAddClaim);
 
-        } else if (id == R.id.nav_claim_history) {
+        } else if (id == R.id.nav_slideshow) {
 
             Intent intentClaimHis = new Intent(this, ClaimHistoryActivity.class);
             startActivity(intentClaimHis);
 
-        } else if (id == R.id.nav_update_profile) {
+        } else if (id == R.id.nav_manage) {
 
             Intent intentClaimHis = new Intent(this, EditProfileActivity.class);
             startActivity(intentClaimHis);
 
-        } else if (id == R.id.nav_logout) {
+        } else if (id == R.id.nav_manage) {
             System.exit(0);
 
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
-        }
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

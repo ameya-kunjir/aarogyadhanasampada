@@ -15,29 +15,25 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    public void createAccount(View view)
-    {
+    public void createAccount(View view) {
         Intent intent = new Intent(this, AuthenticateActivity.class);
         intent.putExtra("caller", "login");
         startActivity(intent);
     }
 
-    public void exitApplication(View view)
-    {
-         System.exit(0);
+    public void exitApplication(View view) {
+        int pid = android.os.Process.myPid();
+        android.os.Process.killProcess(pid);
+        System.exit(0);
     }
 
-    public void logInToAccount(View view)
-    {
-        EditText userID = (EditText)findViewById(R.id.user_id_edit_view);
-        EditText password = (EditText)findViewById(R.id.password_edit_view);
-        if(userID.getText().toString().equals("AMU110189") && password.getText().toString().equals("Amu@110189"))
-        {
-            Intent intent = new Intent(this, MainActivity.class);
+    public void logInToAccount(View view) {
+        EditText userID = (EditText) findViewById(R.id.user_id_edit_view);
+        EditText password = (EditText) findViewById(R.id.password_edit_view);
+        if (userID.getText().toString().equals("AMU110189") && password.getText().toString().equals("Amu@110189")) {
+            Intent intent = new Intent(this, DashboardActivity.class);
             startActivity(intent);
-        }
-        else
-        {
+        } else {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
